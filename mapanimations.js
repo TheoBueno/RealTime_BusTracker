@@ -1,6 +1,6 @@
 // TODO: Add your own Access Token key bellow:
 mapboxgl.accessToken =
-'pk.eyJ1IjoidGhlby1idWVubyIsImEiOiJjbG5nNjZ2dW8wMG56MmtsODN2MHBhem4wIn0.Kou4hDF7heuvt0Ux7h6GWw';
+'Add your Own Access Key to Mapbox here: https://account.mapbox.com/';
             
 //Makes the map and sets center position
 let map = new mapboxgl.Map({
