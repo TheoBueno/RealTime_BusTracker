@@ -1,6 +1,7 @@
+// TODO: Add your own Access Token key bellow:
 mapboxgl.accessToken =
 'pk.eyJ1IjoidGhlby1idWVubyIsImEiOiJjbG5nNjZ2dW8wMG56MmtsODN2MHBhem4wIn0.Kou4hDF7heuvt0Ux7h6GWw';
-
+            
 //Makes the map and sets center position
 let map = new mapboxgl.Map({
 container: 'map',
@@ -15,11 +16,8 @@ var manyBuses = [];
 async function run() {
 const locations = await getBusLocation();
 console.log(new Date());
-//  console.log(locations);
 const index = locations[0];
-//  console.log(index)
 const att = index.attributes;
-//  console.log(att.longitude, att.latitude);;
 manyBuses = [];
 var counter = 0;
 locations.forEach((element) => {
@@ -29,11 +27,8 @@ locations.forEach((element) => {
         element.attributes.latitude
     );
     manyBuses.push(longLat);
-    //     var marker = new mapboxgl.Marker().setLngLat(longLat).addTo(map);
 });
-// console.log(manyBuses);
 setTimeout(run, 15000);
-// console.log(manyBuses);
 return manyBuses;
 }
 
@@ -45,24 +40,9 @@ const json = await response.json();
 return json.data;
 }
 
-/*
-async function initialPos() {
-pos = await manyBuses
-pos.forEach(element => {
-var marker = new mapboxgl.Marker().setLngLat(element).addTo(map);
-})
-}  
-*/
-
 setTimeout(() => {
 console.log(manyBuses);
 }, 2000);
-
-// setTimeout(() => {
-//     forEach(element => {
-//         var marker = new mapboxgl.Marker().setLngLat(element).addTo(map);
-//     })
-// }, 2000);
 
 setTimeout(() => {
 for (i = 0; i < manyBuses.length; i++) {
@@ -82,5 +62,4 @@ setTimeout(() => {
 }, 15000);
 }
 
-// initialPos()
 run();
