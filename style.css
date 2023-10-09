@@ -13,3 +13,21 @@ body {
     left: 0;
     padding: 10px;
 }
+
+.marker {
+    background-image: url('./bus-stop-circle-pin.png');
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.mapboxgl-popup {
+    max-width: 100px;
+} 
+.mapboxgl-popup-content {
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+font-size: 1em;
+background-color: rgb(170, 235, 222);
+}
