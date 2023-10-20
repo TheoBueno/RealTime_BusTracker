@@ -5,7 +5,7 @@
  This project uses a asynchronous functions to fetch data from the Massachusett's Bay Transit Authority on the current location of a selection of buses that service the area around the MIT campus, decoding them from JSON strings into raw data, filtering just the location services related data and updating each of the buses in service simultaneously in 15 second intervals at the first click of the button. The specific route in question would be the MBTA Bus Route 93 
 
 ## How to Run:
- 1. Open the mapanimations.js, locate the TODO: comment section. This is where you will need to add <a href:"https://docs.mapbox.com/help/getting-started/access-tokens/"></a> your own map key.
+ 1. Open the mapanimations.js, locate the TODO: comment section. This is where you will need to add <a href:"https://docs.mapbox.com/help/getting-started/access-tokens/">your own map key</a>.
  2. Once the key is in place and you open the Index page, it should load a map o the Boston area around Cambridge with the current position of the local buses.
  3. Once you decide you would like to update the map, click the button on the page to allow for "real time tracking" (the project updates gps positioning of the buses every 15 seconds at that point)
 
